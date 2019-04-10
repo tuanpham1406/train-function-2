@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let a = prompt("Nhap vao mot ky tu: ");
+    let b = prompt("Nhap vao so phan tu cua mang");
+    let count = 0;
+    for (let i = 0; i < b; i++) {
+        arr.push(prompt("Nhap vao phan tu thu " + i));
+        if (a == arr[i]) {
+            count ++;
+        }
+    }
+    if (count == 0) {
+        alert("-1");
+    } else
+    alert("so lan xuat hien cua ky tu la: " + count);
+</script>
+</body>
+</html>
